@@ -1,0 +1,157 @@
+.logement_display {
+    .display_carousel {
+        margin: 27px 0 15px 0;
+    }
+
+    &_details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logement_display_details {
+        margin-top: 5px;
+        @media screen and (min-width: 600px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .logement_description_left {
+            .logement_titles h1 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                @media screen and (min-width: 900px) {
+                    font-size: 36px;
+                    line-height: 51px;
+                }
+            }
+
+            .logement_titles h2 {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                @media screen and (min-width: 900px) {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+        .logement_description_right {
+            .logement_owner_container {
+                margin: 6px 0 16px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @media screen and (min-width: 600px) {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    justify-content: flex-end;
+                    gap: 10px;
+                }
+                .logement_rating {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 98px;
+                    height: 18px;
+                    @media screen and (min-width: 600px) {
+                        width: 140px;
+                        height: 22px;
+                    }
+                    @media screen and (min-width: 900px) {
+                        width: 196px;
+                        height: 36px;
+                    }
+                    i {
+                        font-size: 18px;
+                        @media screen and (min-width: 600px) {
+                            font-size: 22px;
+                        }
+                        @media screen and (min-width: 900px) {
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .logement_owner {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 17px;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        text-align: right;
+                        width: 80px;
+                        height: 33px;
+                        @media screen and (min-width: 700px) {
+                            width: 100px;
+                            height: 40px;
+                            font-size: 16px;
+                        }
+                        @media screen and (min-width: 900px) {
+                            font-size: 18px;
+                            line-height: 26px;
+                            width: 120px;
+                            height: 50px;
+                        }
+                    }
+
+                    img {
+                        margin-left: 11px;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        @media screen and (min-width: 600px) {
+                            width: 45px;
+                            height: 45px;
+                        }
+                        @media screen and (min-width: 700px) {
+                            width: 54px;
+                            height: 54px;
+                        }
+                        @media screen and (min-width: 900px) {
+                            width: 64px;
+                            height: 64px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .logement_collapses {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        @media screen and (min-width: 700px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 5%;
+        }
+
+        .logement_description {
+            width: 100%;
+            @media screen and (min-width: 700px) {
+                width: 50%;
+            }
+            margin-bottom: 20px;
+            ul li {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+
+        .logement_equipements {
+            width: 100%;
+            @media screen and (min-width: 700px) {
+                width: 50%;
+            }
+        }
+    }
+}

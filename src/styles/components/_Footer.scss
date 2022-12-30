@@ -1,0 +1,45 @@
+.footer {
+    background: $black;
+    height: 209px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }  
+
+    img {
+        width: 122px;
+        height: 40px;
+    }
+
+    p {
+        color: $white;
+        letter-spacing: 0.1rem;
+        font-size: 14px;
+        @media screen and (min-width: 500px) {
+        font-size: 18px;
+        }
+        @media screen and (min-width: 900px) {
+            font-size: 24px;
+          }
+    }
+    i {
+        color: $white;
+        margin-right: 0.5rem;
+        font-size: 14px;
+        @media screen and (min-width: 500px) {
+            font-size: 18px;
+            }
+        @media screen and (min-width: 900px) {
+            font-size: 24px;
+            }
+    }
+
+}

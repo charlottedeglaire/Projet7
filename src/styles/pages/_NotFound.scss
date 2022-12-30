@@ -1,0 +1,56 @@
+.not_found_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    margin: 277px auto;
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        color: $color-1;
+        font-size: 96px;
+        line-height: 142.6%;
+
+        @media screen and (min-width: 900px) {
+            font-size: 288px;
+        }
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+        @media screen and (min-width: 900px) {
+            font-size: 36px;
+        }
+    }
+
+    .NotFound_desktop {
+      display: none;
+      @media screen and (min-width: 600px) {
+          display: block;
+      }
+  }
+
+  .NotFound_mobile {
+      display: block;
+      @media screen and (min-width: 600px) {
+          display: none;
+      }
+  }
+
+    .back_link {
+        font-weight: 500;
+        font-size: 14px;
+        @media screen and (min-width: 500px) {
+            font-size: 18px;
+        }
+    }
+}

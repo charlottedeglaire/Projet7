@@ -1,0 +1,66 @@
+.card_container {
+    position: relative;
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+        box-shadow: $shadowCard;
+        transform: scale(1.05);
+        & h3 {
+            color: $color-2;
+        }
+    }
+    @media screen and (min-width: 500px) {
+        width: 100%;
+        height: 250px;
+    }
+    @media screen and (min-width: 700px) {
+        width: 295px;
+        height: 250px;
+    }
+    @media screen and (min-width: 900px) {
+        width: 340px;
+        height: 340px;
+    }
+    
+    .img_container {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .card_mask {
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+        );
+    }
+
+    h3 {
+        position: absolute;
+        left: 20px;
+        bottom: 15px;
+        color: $white;
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 20px;
+        @media screen and (min-width: 900px) {
+            top: 290px;
+        }
+    }
+}

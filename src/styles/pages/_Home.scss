@@ -1,0 +1,31 @@
+.display_home {
+    margin-top: 16px;
+    @media screen and (min-width: 900px) {
+        margin-top: 63px;
+    }
+    .banner_container {
+        .imgBG {
+            object-fit: cover;
+            object-position: 100% 40%;
+            @media screen and (min-width: 900px) {
+                object-position: 50% 25%;
+            }
+        }
+    }
+}
+
+.display_card {
+    margin-top: 2px;
+    padding: clamp(20px, 5vw, 56px) 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 25px;
+    gap: clamp(20px, 5vw, 60px);
+    @media screen and (min-width: 900px) {
+        margin-top: 43px;
+        background: $grey;
+    }
+}
